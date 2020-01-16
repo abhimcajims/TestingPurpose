@@ -19,8 +19,10 @@ public class Test2  extends AppCompatActivity{
         System.out.print(a);
         System.out.print("Pushing to Branch02 from desktop");
         System.out.print("Pushing to Branch02 from desktop Again");
+    }
 
-
+    void close(){
+        
     }
 
 }
