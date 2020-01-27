@@ -25,27 +25,41 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true">
+
+        </service>
+
+        <activity android:name=".Service.NextPage" />
+        <activity
+            android:name=".Service.ServiceMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".BroadcastReceiver.BroadcastMain">
+
+        </activity>
+
+        <activity android:name=".BroadcastReceiver.MyReceiver">
+           <!-- <intent-filter>
+                <action android:name="custom_intent" />
             </intent-filter>-->
         </activity>
 
-        <service android:name=".Service.MyService"
-            android:enabled="true"/>
-
-        <activity android:name=".Service.NextPage"/>
-        <activity android:name=".Service.ServiceMain"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Thread.ThreadMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
